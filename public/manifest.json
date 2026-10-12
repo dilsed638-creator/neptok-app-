@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "NepTok - Nepal Short Videos",
+  "short_name": "NepTok",
+  "description": "Nepal's premier mobile-first short video social media community",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0B0B0E",
+  "theme_color": "#0B0B0E",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["social", "entertainment", "video"]
+}

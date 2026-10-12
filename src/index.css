@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --nepal-crimson: #DC143C;
+    --nepal-crimson-light: #FF2A55;
+    --nepal-dark: #0B0B0E;
+    --nepal-surface: #14141A;
+    --nepal-card: #1C1C24;
+  }
+
+  body {
+    background-color: #0B0B0E;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overscroll-behavior-y: contain;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Hide scrollbars for clean TikTok feed feeling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Vinyl rotation animation */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Floating heart burst animation */
+@keyframes float-heart {
+  0% {
+    opacity: 1;
+    transform: scale(0.6) translateY(0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.2) translateY(-40px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4) translateY(-90px);
+  }
+}
+
+.animate-float-heart {
+  animation: float-heart 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Floating live gifts and likes */
+@keyframes fly-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(0.8) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-80px) scale(1.1) rotate(-10deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-160px) scale(1.3) rotate(10deg);
+  }
+}
+
+.animate-fly-up {
+  animation: fly-up 1.8s ease-out forwards;
+}
+
+/* Audio wave bar animation */
+@keyframes audio-bar {
+  0%, 100% {
+    height: 4px;
+  }
+  50% {
+    height: 16px;
+  }
+}
+
+.animate-audio-bar-1 {
+  animation: audio-bar 0.8s ease-in-out infinite;
+}
+.animate-audio-bar-2 {
+  animation: audio-bar 0.9s ease-in-out 0.2s infinite;
+}
+.animate-audio-bar-3 {
+  animation: audio-bar 0.7s ease-in-out 0.4s infinite;
+}

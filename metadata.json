@@ -1,0 +1,7 @@
+{
+  "name": "NepTok - Mobile Short Video App",
+  "description": "Mobile-first TikTok-style short video social media app for Nepal with swipe feed, uploads, search, profiles, live streaming, and Android APK readiness.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
